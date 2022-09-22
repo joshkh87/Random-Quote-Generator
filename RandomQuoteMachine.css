@@ -1,73 +1,80 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    min-height: 100vh;
-    transition: 1.9s;
-    transition-timing-function: ease-in-out;
-    background-image: linear-gradient(to right bottom, rgb(124, 252, 0), blue);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    box-shadow: 0 4px 10px blue;
-    border-radius: 20px;
-    width: 700px;
-    background-color: green;
-    margin: 10px;
-  }
-  .fa-quote-left,
-  .fa-quote-right {
-    font-size: 50px;
-    color: rgb(0, 0, 205);
-  }
-  .quote {
-    text-align: center;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  .author {
-    color: orange;
-    margin: 10px;
-    text-align: right;
-    font-size: 20px;
-    font-style: italic;
-    font-family: cursive;
-  }
-  hr {
-    margin: 10px 0;
-    width: 100%;
-    border: 1px solid red;
-    background-color: black;
-  }
-  .buttons {
-    width: 100%;
-    display: block;
-    margin-top: 1px;
-  }
-  .next {
-    font-size: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 10px;
-    margin-top: 5px;
-    font-weight: bold;
-    color: black;
-    background-image: linear-gradient(to right bottom, rgb(127, 255, 0), purple);
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-  .container:hover {
-    box-shadow: 0 30px 30px rgb(0, 230, 230);
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  transition: 1.9s;
+  transition-timing-function: ease-in-out;
+  background-image: linear-gradient(to right bottom, rgb(124, 252, 0), blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  box-shadow: 0 4px 10px blue;
+  border-radius: 15px;
+  width: 700px;
+  background-color: green;
+  margin: 10px;
+  transition-duration: 0.2s;
+}
+.fa-quote-left,
+.fa-quote-right {
+  font-size: 50px;
+  color: rgb(0, 0, 205);
+}
+.quote {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.author {
+  color: orange;
+  margin: 10px;
+  text-align: right;
+  font-size: 20px;
+  font-style: italic;
+  font-family: cursive;
+}
+hr {
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid red;
+  background-color: black;
+}
+.buttons {
+  width: 100%;
+  display: block;
+  margin-top: 1px;
+}
+.next {
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: grab;
+  padding: 10px;
+  margin-top: 5px;
+  font-weight: bold;
+  color: black;
+  background-image: linear-gradient(to right bottom, rgb(127, 255, 0), purple);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition-duration: 0.3s;
+}
+.container:hover {
+  box-shadow: 0 30px 30px rgb(0, 230, 230);
+}
+.next:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.5);
+  border-radius: 100px;
+}
