@@ -34,6 +34,9 @@
     text-align: center;
     font-size: 35px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .author {
     color: orange;
